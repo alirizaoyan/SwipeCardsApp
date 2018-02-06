@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.huxq17.swipecardsview.SwipeCardsView
+        android:id="@+id/swipeCardsView"
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_ly">
+
+
+    </com.huxq17.swipecardsview.SwipeCardsView>
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_ly">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/dislike"
+        android:id="@+id/cancel"
+        android:background="@null"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageButton
+        android:id="@+id/begen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/like"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
